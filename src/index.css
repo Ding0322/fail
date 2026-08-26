@@ -1,0 +1,92 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-rounded: 'Zen Maru Gothic', 'M PLUS Rounded 1c', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    --font-hand: 'Gaegu', cursive, sans-serif;
+  }
+
+  body {
+    font-family: var(--font-rounded);
+    background-color: #F7F4EB;
+    background-image: radial-gradient(#E5E0D2 1.2px, transparent 1.2px);
+    background-size: 20px 20px;
+    color: #5D574F;
+    -webkit-tap-highlight-color: transparent;
+    min-height: 100%;
+  }
+}
+
+/* Bento Grid Custom Shadows & Aesthetic Helpers */
+.bento-shadow {
+  box-shadow: 6px 6px 0px #E0E5D5;
+}
+
+.bento-shadow-sm {
+  box-shadow: 4px 4px 0px #E0E5D5;
+}
+
+.bento-shadow-xs {
+  box-shadow: 2px 2px 0px #E0E5D5;
+}
+
+.bento-card {
+  background-color: #ffffff;
+  border-radius: 28px;
+  box-shadow: 6px 6px 0px #E0E5D5;
+  border: 2px solid #E8E5D8;
+}
+
+.bento-card-sm {
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 4px 4px 0px #E0E5D5;
+  border: 1.5px solid #E8E5D8;
+}
+
+/* Backward compatibility for ac-shadow classes */
+.ac-shadow {
+  box-shadow: 6px 6px 0px #E0E5D5;
+}
+
+.ac-shadow-sm {
+  box-shadow: 4px 4px 0px #E0E5D5;
+}
+
+.ac-shadow-lg {
+  box-shadow: 8px 8px 0px #D6DC CB;
+}
+
+/* Tape sticker decoration */
+.tape-top {
+  position: relative;
+}
+.tape-top::before {
+  content: '';
+  position: absolute;
+  top: -8px;
+  left: 50%;
+  transform: translateX(-50%) rotate(-1deg);
+  width: 70px;
+  height: 18px;
+  background: rgba(232, 165, 152, 0.6);
+  border-radius: 2px;
+  z-index: 10;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+}
+
+/* Hide scrollbars while allowing smooth scrolling */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.paper-pattern {
+  background-color: #ffffff;
+  background-image: radial-gradient(#F0EBD9 1.2px, transparent 1.2px);
+  background-size: 14px 14px;
+}
+

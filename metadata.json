@@ -1,0 +1,6 @@
+{
+  "name": "島嶼漫遊・團體旅遊規劃手帳",
+  "description": "日系手帳與動森風格的團體旅遊規劃 Web App (PWA)，包含行程時間軸、登機證預訂管理、分帳記帳、圖文手帳日誌、準備清單與成員管理。",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
